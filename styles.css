@@ -1,0 +1,81 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F7F7;
+    padding-bottom: 50px; /* Add padding at the bottom to avoid overlap */
+}
+
+.sticky-header {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky; /* Sticky positioning */
+    top: 0; /* Stick to the top */
+    background: #112D4E; /* Background color */
+    color: white; /* Text color */
+    padding: 10px 0; /* Padding for header */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.main-content {
+    flex: 1; /* Adjust this value based on your header height */
+}
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #F9F7F7; /* Light gray background for the container */
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.book {
+    margin: 15px;
+    text-align: center;
+    border: solid 2px #007BFF; /* Solid blue border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Space between border and content */
+    background-color: #F9F7F7; /* Background color for the book container */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for each book */
+    transition: transform 0.2s; /* Animation on hover */
+}
+
+.book:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.book img {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 5px; /* Rounded corners for the image */
+}
+
+.book img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #3F72AF; /* Footer background color */
+    color: white; /* Footer text color */
+    text-align: center;
+    
+}
